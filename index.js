@@ -1,12 +1,12 @@
 const container = document.querySelector('.container');
-const search = document.querySelector('.search-box button');
+const search = document.querySelector('.searchBar button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
 
-    const APIKey = '994050920fd25182133beb490921064b';
+    const APIKey = 'c8562e0420b9e5dcbb108cd6f9c46203    ';
     const city = document.querySelector('.searchBar input').value;
 
     if (city === '')
@@ -40,19 +40,19 @@ search.addEventListener('click', () => {
                     break;
 
                 case 'Rain':
-                    image.src = 'images/rain.png';
+                    image.src = 'rain.png';
                     break;
 
                 case 'Snow':
-                    image.src = 'images/snow.png';
+                    image.src = 'snow.png';
                     break;
 
                 case 'Clouds':
-                    image.src = 'images/cloud.png';
+                    image.src = 'cloud.png';
                     break;
 
                 case 'Haze':
-                    image.src = 'images/mist.png';
+                    image.src = 'mist.png';
                     break;
 
                 default:
